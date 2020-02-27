@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="tex t/css" href="vendors/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="vendors/css/grid.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendors/css/ionicons.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Work</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="row">
+          <i class="ion-logo-foursquare logo icon-big"></i>
+          <i class="ion-ios-menu main-nav" onclick="openNav()"></i>
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+              >&times;</a
+            >
+            <a href="index.html">Home</a>
+            <a href="work.html">Work</a>
+            <a href="services.html">Services</a>
+            <a href="#">Cravings</a>
+            <a href="about.html">About</a>
+            <a href="index.html#section-project">Contact</a>
+          </div>
+
+          <!-- Use any element to open the sidenav -->
+          <span onclick="openNav()"></span>
+        </div>
+      </nav>
+    </header>
+    <section class="section-work" style="background-color: #eeeeee80;">
+      <div class="row">
+        <h2>Talk to us</h2>
+        <!-- <hr style="margin: 20px 0 50px 0;" /> -->
+      </div>
+      <div class="row">
+        <form method="post" action="#" class="contact-form">
+          <div class="row">
+            <p style="font-weight: bold; margin-bottom: 30px; font-size: 110%;">
+              Let's make your dream and ours come true
+            </p>
+          </div>
+          <div class="row" style="margin-bottom: 20px;">
+            <div class="col span-1-of-2">
+              <label for="name">Full Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                required
+                style="margin-top: 10px; background-color: #eee; height: 40px; color: #555"
+              />
+            </div>
+            <div class="col span-1-of-2">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                style="margin-top: 10px; background-color: #eee; height: 40px; color: #555"
+              />
+            </div>
+          </div>
+          <div class="row" style="margin-bottom: 20px;">
+            <div class="col span-1-of-2">
+              <label for="company-name">Company Name</label>
+              <input
+                type="text"
+                name="company-name"
+                id="company-name"
+                style="margin-top: 8px; background-color: #eee; height: 40px; color: #555"
+              />
+            </div>
+            <div class="col span-1-of-2">
+              <label for="title">Title/Role</label>
+              <input
+                type="text"
+                name="title"
+                id="title-name"
+                style="margin-top: 8px; background-color: #eee; height: 40px; color: #555"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <input
+              type="checkbox"
+              id="brand-services"
+              name="brand-services"
+              value="Brand Services"
+            />
+            <label for="brand-services"
+              >Brand Services (Identity, principles, visuals, strategy,
+              positioning)</label
+            ><br /><br />
+            <input type="checkbox" id="design" name="design" value="Design" />
+            <label for="design"
+              >Design (UI/UX design, Packaging and Graphic Design)</label
+            ><br /><br />
+            <input
+              type="checkbox"
+              id="development"
+              name="development"
+              value="Development"
+            />
+            <label for="development"
+              >Development (Mobile App, Custom Web, E-Commerce Solutions)</label
+            ><br />
+            <br />
+            <input
+              type="checkbox"
+              id="digital-marketing"
+              name="digital-marketing"
+              value="Digital Marketing"
+            />
+            <label for="digital-marketing"
+              >Digital Marketing (Social Media Marketing, Marketing Blueprint,
+              Pay per click, Traffic conversion, SEO)</label
+            ><br />
+            <br />
+          </div>
+          <div class="row">
+            <label
+              >We would like you to tell us more about how better we can
+              help</label
+            ><br /><br />
+            <textarea name="message" placeholder="Tell us more"> </textarea
+            ><br /><br />
+            <input type="submit" value="Submit" />
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section-offices">
+      <div class="row">
+        <h2>Our Office</h2>
+        <div class="address" style="color: #444;">
+          <h3>Nigeria</h3>
+          <p>jamiu.okanlawon@globalfaaiz.com</p>
+          <p>
+            08108627764
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="row">
+        <div class="col span-1-of-2">
+          <div style="margin-bottom: 10%;">
+            <i
+              class="ion-logo-foursquare"
+              style="font-size: 100px; color: #fff; margin: 0;"
+            ></i>
+          </div>
+          <div class="footer-nav">
+            <a href="index.html"><h3>Home</h3></a>
+            <a href="work.html"><h3>Work</h3></a>
+            <a href="services.html"><h3>Services</h3></a>
+            <a href="#"><h3>Cravings</h3></a>
+            <a href="about.html"><h3>About</h3></a>
+            <a href="index.html#section-project"><h3>Contact</h3></a>
+          </div>
+        </div>
+        <div class="col span-1-of-2">
+          <div class="work-with-us">
+            <a href="work.html"> <h2>Work with us</h2></a>
+          </div>
+          <div class="address">
+            <h3>Nigeria</h3>
+            <p>jamiu.okanlawon@globalfaaiz.com</p>
+            <p>
+              08108627764
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col span-1-of-2">
+          <p>
+            Copyright &copy; 2020 GlobalFaaiz
+          </p>
+        </div>
+        <div class="col span-1-of-2">
+          <ul class="social-icons">
+            <li>
+              <a href="#"><i class="ion-logo-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ion-logo-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ion-logo-googleplus"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ion-logo-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="resources/js/app.js"></script>
+  </body>
+</html>

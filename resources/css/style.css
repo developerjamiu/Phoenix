@@ -1,0 +1,902 @@
+/* ----------------------------------------------*/
+/* Basic Setup */
+/* ----------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #fff;
+  color: #555;
+  font-family: "Lato", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/* ----------------------------------------------*/
+/* Reusable Component */
+/* ----------------------------------------------*/
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.box {
+  padding: 1%;
+  margin: 0;
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 240%;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-size: 140%;
+  margin-bottom: 15px;
+}
+
+h2:after {
+  display: block;
+  height: 2px;
+  background-color: #e65a22;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.long-copy {
+  line-height: 145%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.box p {
+  font-size: 90%;
+  line-height: 145%;
+}
+
+/* Links */
+a,
+a:visited {
+  color: #e65a22;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #e65a22;
+  -webkit-transition: border-bottom 0.2s, color 0.2s;
+  transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+  color: #555;
+  border-bottom: 1px solid transparent;
+}
+
+/* Buttons */
+.btn:link,
+.btn:visited,
+input[type="submit"] {
+  display: inline-block;
+  padding: 15px 35px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 0;
+  -webkit-transition: background-color 0.5s, border 0.5s, color 0.5s;
+  transition: background-color 0.5s, border 0.5s, color 0.5s;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type="submit"] {
+  background-color: #e65a22;
+  border: 1px solid #e65a22;
+  color: #fff;
+  margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+  border: 1px solid #e65a22;
+  color: #e65a22;
+}
+
+.btn:hover,
+.btn:active,
+input[type="submit"]:hover,
+input[type="submit"]:active {
+  background-color: #f58457;
+}
+
+.btn-full:hover,
+.btn-full:active,
+input[type="submit"] {
+  border: 1px solid #f58457;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+  border: 1px solid #f58457;
+  color: #fff;
+}
+
+/* ---------------------------------------------*/
+/* The side navigation menu */
+/* ---------------------------------------------*/
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  background-color: #e67d22ec; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  -webkit-transition: 0.5s;
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 30px;
+  color: #efefef;
+  display: block;
+  border: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #ffffff;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  -webkit-transition: margin-left 0.5s;
+  transition: margin-left 0.5s;
+  padding: 20px;
+}
+
+/* ---------------------------------------------*/
+/* Header */
+/* ---------------------------------------------*/
+header nav {
+  margin-bottom: 20px;
+}
+
+header nav .row {
+  max-width: 1280px;
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+  float: left;
+}
+
+.icon-big {
+  font-size: 500%;
+  display: block;
+  color: #e67e22;
+}
+
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 40px;
+  font-size: 220%;
+  color: #333333;
+}
+
+.headline {
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.7)),
+      to(rgba(0, 0, 0, 0.7))
+    ),
+    url(img/three.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(img/three.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  background-attachment: fixed;
+  margin: 15px;
+}
+
+.hero-text-box {
+  position: absolute;
+  width: 1140px;
+  top: 65%;
+  left: 52%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.hero-text-box h1 span {
+  font-weight: bold;
+}
+
+/* ---------------------------------------------*/
+/* Introduction */
+/* ---------------------------------------------*/
+.section-intro {
+  padding: 70px auto;
+}
+
+.intro {
+  line-height: 145%;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 140%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.intro span,
+.intro a {
+  font-weight: bold;
+}
+
+/* ---------------------------------------------*/
+/* Journey */
+/* ---------------------------------------------*/
+.section-journey {
+  background-color: #555555;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 0;
+}
+
+.section-journey .long-copy {
+  margin-bottom: 80px;
+}
+
+.journey-options {
+  margin: 0;
+  max-width: 100vw;
+}
+
+.journey-options div h3 {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.journey-options div .btn {
+  font-size: 90%;
+  padding: 10px;
+}
+
+#innovation {
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.7)),
+      to(rgba(0, 0, 0, 0.7))
+    ),
+    url(img/inno.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(img/inno.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 7% 3%;
+  width: 33%;
+  margin: 0;
+  height: 93vh;
+}
+
+#branding {
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.7)),
+      to(rgba(0, 0, 0, 0.7))
+    ),
+    url(img/brand.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(img/brand.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 7% 3%;
+  width: 34%;
+  margin: 0;
+  height: 93vh;
+}
+
+#vivacity {
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.7)),
+      to(rgba(0, 0, 0, 0.7))
+    ),
+    url(img/viva.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(img/viva.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 7% 3%;
+  width: 33%;
+  margin: 0;
+  height: 93vh;
+}
+
+/* ---------------------------------------------*/
+/* Services */
+/* ---------------------------------------------*/
+.section-services {
+  font-family: "Montserrat", sans-serif;
+}
+
+.box p {
+  margin-bottom: 15px;
+}
+
+.box .btn {
+  font-size: 90%;
+  padding: 10px;
+}
+
+/* -------------------------------------------*/
+/* Start Project */
+/* -------------------------------------------*/
+.section-project {
+  background-color: #e67d2244;
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 10px;
+}
+
+.section-project .row {
+  margin-bottom: 70px;
+}
+
+.section-project .row h2 {
+  color: #e67e22;
+}
+
+.section-project .long-copy {
+  text-align: center;
+}
+
+.long-copy-center {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.long-copy .btn {
+  font-size: 90%;
+  padding: 10px;
+}
+
+/* -------------------------------------------*/
+/* Footer */
+/* -------------------------------------------*/
+footer {
+  background-color: #333;
+  padding: 50px;
+  font-size: 80%;
+}
+
+.footer-nav a h3,
+.footer-nav a h3:visited {
+  font-weight: bold;
+  color: #333;
+  -webkit-text-stroke-width: thin;
+  -webkit-text-stroke-color: white;
+  font-size: 36px;
+  font-family: "Montserrat", sans-serif;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.footer-nav a h3:hover,
+.footer-nav a h3:active {
+  color: #fff;
+}
+
+.work-with-us a h2 {
+  text-align: start;
+  font-weight: bold;
+  color: #333;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  margin-top: 5%;
+  font-size: 60px;
+  font-family: "Montserrat", sans-serif;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.work-with-us a h2:hover,
+.work-with-us a h2:active {
+  color: #fff;
+}
+
+.address {
+  color: #ddd;
+}
+
+.address h3 {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-bottom: 7px;
+}
+
+.address p {
+  margin-top: 7px;
+  font-size: 18px;
+  margin-bottom: 7px;
+}
+
+.social-icons {
+  list-style: none;
+  float: right;
+}
+
+.footer-nav li,
+.social-icons li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-icons li:last-child {
+  margin: 0;
+}
+
+.footer-nav li a,
+.footer-nav li a:visited,
+.social-icons li a,
+.social-icons li a:visited {
+  text-decoration: none;
+  border: 0;
+  color: #fff;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+  color: #ddd;
+}
+
+.social-icons li a,
+.social-icons li a:visited {
+  font-size: 150%;
+}
+
+.ion-logo-facebook,
+.ion-logo-twitter,
+.ion-logo-googleplus,
+.ion-logo-instagram {
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.ion-logo-facebook:hover {
+  color: #3b5998;
+}
+
+.ion-logo-twitter:hover {
+  color: #00aced;
+}
+
+.ion-logo-googleplus:hover {
+  color: #dd4b39;
+}
+
+.ion-logo-instagram:hover {
+  color: #517fa4;
+}
+
+footer p {
+  color: #ccc;
+  margin-top: 20px;
+}
+
+.btn-app,
+.btn-app:visited {
+  border: 0;
+}
+
+.btn-app img {
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
+}
+
+/* -------------------------------------------*/
+/* Services */
+/* -------------------------------------------*/
+
+/* -------------------------------------------*/
+/* Reusables */
+/* -------------------------------------------*/
+
+.tagline {
+  font-size: 200%;
+  padding-top: 16%;
+  font-weight: bold;
+}
+
+.title-text {
+  font-size: 250%;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+  color: transparent;
+  font-weight: bold;
+}
+
+.title-text:hover,
+.title-text:active {
+  color: white;
+}
+
+.services-text {
+  color: #aaa;
+  text-align: justify;
+  margin: 30px 0 0 0;
+}
+
+#inno-service-list {
+  font-size: 110%;
+  font-weight: bold;
+  color: #ddd;
+}
+
+#brand-service-list {
+  font-size: 110%;
+  font-weight: bold;
+}
+
+#viva-service-list {
+  font-size: 110%;
+  font-weight: bold;
+}
+
+/* -------------------------------------------*/
+/* Innovation */
+/* -------------------------------------------*/
+.section-inno {
+  background-color: #333;
+  font-family: Montserrat, sans-serif;
+}
+
+.section-inno .small-container {
+  text-align: center;
+  padding-top: 10.6%;
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.5)),
+      to(rgba(255, 255, 255, 0))
+    ),
+    url(img/innovation.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  font-weight: bold;
+}
+
+/* -------------------------------------------*/
+/* Branding */
+/* -------------------------------------------*/
+.section-brand {
+  background-color: #ffffef;
+  font-family: Montserrat, sans-serif;
+}
+
+.section-brand .small-container {
+  text-align: center;
+  padding-top: 10.6%;
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.5)),
+      to(rgba(0, 0, 0, 0.5))
+    ),
+    url(img/branding.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  font-weight: bold;
+}
+
+.section-brand .brand {
+  padding: 0 0 0 10%;
+}
+
+.section-viva .viva {
+  padding-right: 10%;
+}
+
+.section-brand .services-text {
+  color: #555;
+  text-align: justify;
+  margin: 30px 0 0 0;
+}
+
+/* -------------------------------------------*/
+/* Vivacity */
+/* -------------------------------------------*/
+.section-viva {
+  background-color: #ffbe926e;
+  font-family: "Montserrat", sans-serif;
+}
+
+.section-viva .small-container {
+  text-align: center;
+  padding-top: 10.6%;
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.5)),
+      to(rgba(0, 0, 0, 0.5))
+    ),
+    url(img/vivacity.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  font-weight: bold;
+}
+
+.section-viva .services-text {
+  color: #555;
+  text-align: justify;
+  margin: 30px 0 0 0;
+}
+
+/* -------------------------------------------*/
+/* Values */
+/* -------------------------------------------*/
+.section-values {
+  background-color: #f4f4f4;
+  color: white;
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(255, 255, 255, 0.2)),
+      to(rgba(255, 255, 255, 0.2))
+    ),
+    url(img/values.jpg);
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2)
+    ),
+    url(img/values.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.value-box {
+  background-color: black;
+  padding: 7%;
+  margin-top: 70px;
+  font-weight: bold;
+}
+
+.value {
+  margin-bottom: 40px;
+}
+
+.value:last-child {
+  margin-bottom: 0;
+}
+
+.value div {
+  border: 2px solid white;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  padding: 5px;
+  float: left;
+  font-size: 100%;
+  margin-right: 25px;
+}
+
+/* ---------------------------------------------*/
+/* About Us */
+/* ---------------------------------------------*/
+.section-team {
+  background-color: #000;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.los-text {
+  padding-top: 40%;
+}
+
+.section-los li {
+  padding-left: 22px;
+  position: relative;
+  font-size: 90%;
+}
+
+.section-los li:last-child {
+  margin-bottom: 30px;
+}
+
+.section-los p {
+  margin-bottom: 15px;
+  line-height: 2;
+}
+
+.section-los li::before {
+  content: "";
+  width: 13px;
+  height: 1px;
+  background: #151515;
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+
+/* ------Contact Us Modal ----------- */
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 5px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefef5;
+  margin: auto;
+  padding: 0 0 3% 0;
+  border: 1px solid #888;
+  width: 75%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -50px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -50px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+/* The Close Button */
+.close {
+  color: #444;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  color: white;
+  padding: 3%;
+}
+
+/* -------------------------------------------*/
+/* Contact Form */
+/* -------------------------------------------*/
+.contact-form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  height: 100px;
+}
+
+input[type="checkbox"] {
+  margin: 10px 5px 10px 0;
+}
+
+*:focus {
+  outline: none;
+}

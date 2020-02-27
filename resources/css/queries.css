@@ -1,0 +1,385 @@
+/* Big tablets to 1200px (widths smaller than the 1140px row) */
+@media only screen and (max-width: 1200px) {
+  body {
+    font-size: 19px;
+  }
+
+  section {
+    padding: 70px 0;
+  }
+
+  .hero-text-box {
+    width: 100%;
+    padding: 0 2%;
+  }
+
+  .row {
+    padding: 0 2%;
+  }
+
+  .journey-options {
+    padding: 0;
+  }
+
+  .intro {
+    font-size: 130%;
+  }
+
+  footer .col:first-child {
+    width: 42%;
+  }
+
+  footer .col:last-child {
+    width: 55%;
+  }
+}
+
+/* Small tablets to big tablets from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+  body {
+    font-size: 18px;
+  }
+
+  section {
+    padding: 50px 0;
+  }
+
+  h3 {
+    font-size: 114%;
+  }
+
+  .intro {
+    font-size: 120%;
+  }
+
+  .long-copy {
+    line-height: 145%;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .footer-nav a h3,
+  .footer-nav a h3:visited {
+    font-size: 30px;
+  }
+
+  footer .col:first-child {
+    width: 40%;
+  }
+
+  footer .col:last-child {
+    margin-top: 30px;
+    width: 57%;
+  }
+
+  .work-with-us a h2 {
+    font-size: 40px;
+  }
+
+  .section-inno h3 {
+    font-size: 180%;
+  }
+
+  .section-brand h3 {
+    font-size: 180%;
+  }
+
+  .section-viva h3 {
+    font-size: 180%;
+  }
+
+  .section-inno .long-copy {
+    margin: 0;
+  }
+
+  .section-inno .small-container {
+    height: 68vh;
+  }
+
+  .section-brand .small-container {
+    height: 68vh;
+  }
+
+  .section-viva .small-container {
+    height: 68vh;
+  }
+
+  .section-brand .brand {
+    padding: 0 0 0 2%;
+  }
+
+  .section-viva .viva {
+    padding-right: 4%;
+  }
+}
+
+/* Small Phones to small tablets from 481px to 767px */
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 17px;
+  }
+
+  section {
+    padding: 30px 0;
+  }
+
+  .headline {
+    margin: 0;
+  }
+
+  .row,
+  .hero-text-box {
+    padding: 0 4%;
+  }
+
+  #innovation {
+    width: 100%;
+    height: 65%;
+    padding: 14% 5%;
+  }
+
+  #branding {
+    width: 100%;
+    height: 65%;
+    padding: 14% 5%;
+  }
+
+  #vivacity {
+    width: 100%;
+    height: 65%;
+    padding: 14% 5%;
+  }
+
+  h1 {
+    font-size: 180%;
+  }
+
+  h2 {
+    font-size: 150%;
+  }
+
+  .long-copy {
+    width: 100%;
+    margin: 0%;
+  }
+
+  .journey-options {
+    padding: 0;
+  }
+
+  .section-values .value-box {
+    width: 95%;
+  }
+
+  .section-los .col {
+    width: 46%;
+  }
+  .section-los .col:first-child {
+    width: 100%;
+  }
+
+  .los-text {
+    padding-top: 0;
+  }
+
+  .section-offices {
+    text-align: center;
+  }
+
+  .contact-form {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .section-inno h3 {
+    font-size: 130%;
+  }
+
+  .section-brand h3 {
+    font-size: 130%;
+  }
+
+  .section-viva h3 {
+    font-size: 130%;
+  }
+
+  .section-inno .row:first-child .col:first-child {
+    width: 60%;
+  }
+
+  .section-inno .row:first-child .col:last-child {
+    width: 38%;
+  }
+
+  .section-brand .row:first-child .col:last-child {
+    width: 60%;
+  }
+
+  .section-brand .row:first-child .col:first-child {
+    width: 38%;
+  }
+
+  .section-viva .row:first-child .col:first-child {
+    width: 60%;
+  }
+
+  .section-viva .row:first-child .col:last-child {
+    width: 38%;
+  }
+
+  #inno-service-list {
+    font-size: 90%;
+  }
+
+  #brand-service-list {
+    font-size: 90%;
+  }
+
+  #viva-service-list {
+    font-size: 90%;
+  }
+
+  .section-inno .small-container {
+    height: 60vh;
+  }
+
+  .section-brand .small-container {
+    height: 60vh;
+  }
+
+  .section-viva .small-container {
+    height: 60vh;
+  }
+
+  .section-viva .row:last-child .col {
+    width: 48%;
+  }
+}
+
+/* Small Phones from 0 to 480px */
+@media only screen and (max-width: 480px) {
+  section {
+    padding: 50px 0 0 0;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  .headline {
+    margin: 0;
+  }
+
+  #innovation {
+    width: 100%;
+    height: 60%;
+    padding: 14% 5%;
+  }
+
+  #branding {
+    width: 100%;
+    height: 60%;
+    padding: 14% 5%;
+  }
+
+  #vivacity {
+    width: 100%;
+    height: 60%;
+    padding: 14% 5%;
+  }
+
+  .intro {
+    line-height: 145%;
+    width: 90%;
+    margin-bottom: 50px;
+  }
+
+  .col {
+    width: 100%;
+  }
+
+  #services .col {
+    margin-bottom: 20px;
+  }
+
+  .section-team .col {
+    width: 90%;
+    margin: 5%;
+  }
+
+  .footer-nav a h3,
+  .footer-nav a h3:visited {
+    font-size: 24px;
+  }
+
+  footer .col:first-child {
+    text-align: center;
+    width: 100%;
+  }
+
+  footer .col:last-child {
+    margin-top: 28px;
+    width: 100%;
+  }
+
+  .work-with-us a h2 {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .modal-content {
+    padding: 5% 0;
+  }
+
+  .contact-form {
+    width: 75%;
+  }
+
+  .section-work .row {
+    margin-bottom: 10%;
+  }
+
+  .section-offices {
+    margin-bottom: 10%;
+  }
+
+  .section-inno .small-container {
+    display: none;
+  }
+
+  .section-brand .small-container {
+    display: none;
+  }
+
+  .section-viva .small-container {
+    display: none;
+  }
+
+  .section-inno .row:first-child .col:first-child {
+    width: 100%;
+  }
+
+  .section-brand .row:first-child .col:last-child {
+    width: 100%;
+  }
+
+  .section-viva .row:first-child .col:first-child {
+    width: 100%;
+  }
+
+  .section-inno {
+    padding: 0 0 30px 0;
+  }
+
+  .section-brand {
+    padding: 0 0 30px 0;
+  }
+
+  .section-viva {
+    padding: 0 0 30px 0;
+  }
+
+  .look {
+    padding-bottom: 30px;
+  }
+}
