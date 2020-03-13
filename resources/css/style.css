@@ -762,9 +762,20 @@ footer p {
 /* About Us */
 /* ---------------------------------------------*/
 .section-team {
-  background-color: #000;
-  color: #fff;
+  background-color: #efefef;
+  color: #333;
   font-family: "Montserrat", sans-serif;
+}
+
+.section-team .row .col h3 {
+  font-size: 85%;
+  font-weight: bold;
+  margin: 10px 0 0 0;
+}
+
+.section-team .row .col p {
+  font-family: "Lato", "Arial", sans-serif;
+  font-size: 80%;
 }
 
 .los-text {
