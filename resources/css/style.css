@@ -160,6 +160,13 @@ input[type="submit"] {
   color: #fff;
 }
 
+.centered-image {
+  padding: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* ---------------------------------------------*/
 /* The side navigation menu */
 /* ---------------------------------------------*/
@@ -248,15 +255,15 @@ header nav .row {
       left top,
       left bottom,
       from(rgba(0, 0, 0, 0.7)),
-      to(rgba(0, 0, 0, 0.7))
+      to(hsla(0, 0%, 0%, 0.7))
     ),
-    url(img/three.jpg);
+    url(img/north.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(img/three.jpg);
+    url(img/north.jpg);
   background-size: cover;
-  background-position: center;
-  height: 90vh;
-  background-attachment: fixed;
+  /* background-position: center; */
+  height: 100vh;
+  /* background-attachment: fixed; */
   margin: 15px;
 }
 
@@ -611,6 +618,7 @@ footer p {
 #viva-service-list {
   font-size: 110%;
   font-weight: bold;
+  text-align: center;
 }
 
 /* -------------------------------------------*/
