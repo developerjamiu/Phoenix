@@ -931,3 +931,10 @@ input[type="checkbox"] {
 *:focus {
   outline: none;
 }
+
+/* -------------------------------------------*/
+/* Section Work */
+/* -------------------------------------------*/
+.section-work label {
+  color: black;
+}
