@@ -177,7 +177,7 @@ input[type="submit"] {
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   right: 0;
-  background-color: #e67d22ec; /* Black*/
+  background-color: #e65a22; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   -webkit-transition: 0.5s;
@@ -188,8 +188,8 @@ input[type="submit"] {
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 30px;
-  color: #efefef;
+  font-size: 40px;
+  color: #dedede;
   display: block;
   border: 0;
   -webkit-transition: 0.3s;
@@ -230,9 +230,9 @@ header nav .row {
 }
 
 .logo {
+  padding-top: 20px;
   height: 100px;
   width: auto;
-  float: left;
 }
 
 .icon-big {
@@ -304,7 +304,7 @@ header nav .row {
 /* Journey */
 /* ---------------------------------------------*/
 .section-journey {
-  background-color: #555555;
+  background-color: #333;
   color: #fff;
   font-family: "Montserrat", sans-serif;
   padding-bottom: 0;
@@ -437,7 +437,7 @@ header nav .row {
 /* Footer */
 /* -------------------------------------------*/
 footer {
-  background-color: #333;
+  background-color: #000;
   padding: 50px;
   font-size: 80%;
 }
@@ -445,7 +445,7 @@ footer {
 .footer-nav a h3,
 .footer-nav a h3:visited {
   font-weight: bold;
-  color: #333;
+  color: #000;
   -webkit-text-stroke-width: thin;
   -webkit-text-stroke-color: white;
   font-size: 36px;
@@ -462,7 +462,7 @@ footer {
 .work-with-us a h2 {
   text-align: start;
   font-weight: bold;
-  color: #333;
+  color: #000;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
   margin-top: 5%;
@@ -499,6 +499,23 @@ footer {
   float: right;
 }
 
+.social-icons-nav {
+  list-style: none;
+  float: left;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.social-icons-nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.social-icons-nav li a {
+  font-size: 120%;
+}
+
 .footer-nav li,
 .social-icons li {
   display: inline-block;
@@ -532,8 +549,7 @@ footer {
 }
 
 .ion-logo-facebook,
-.ion-logo-twitter,
-.ion-logo-googleplus,
+.ion-logo-linkedin,
 .ion-logo-instagram {
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
@@ -543,12 +559,8 @@ footer {
   color: #3b5998;
 }
 
-.ion-logo-twitter:hover {
+.ion-logo-linkedin:hover {
   color: #00aced;
-}
-
-.ion-logo-googleplus:hover {
-  color: #dd4b39;
 }
 
 .ion-logo-instagram:hover {

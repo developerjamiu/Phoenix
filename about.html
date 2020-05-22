@@ -25,7 +25,7 @@
     <header>
       <nav>
         <div class="row">
-          <i class="ion-logo-foursquare logo icon-big"></i>
+          <img src="resources/img/phoenix-logo.jpeg" class="logo" />
           <i class="ion-ios-menu main-nav" onclick="openNav()"></i>
           <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
@@ -36,7 +36,20 @@
             <a href="services.html">Services</a>
             <a href="#">Stories</a>
             <a href="about.html">About</a>
-            <a href="index.html#section-project">Contact</a>
+            <a class="js--scroll-to-contact" href="#" onclick="closeNav()"
+              >Contact</a
+            >
+            <ul class="social-icons-nav">
+              <li>
+                <a href="#"><i class="ion-logo-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="ion-logo-linkedin"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="ion-logo-instagram"></i></a>
+              </li>
+            </ul>
           </div>
 
           <!-- Use any element to open the sidenav -->
@@ -47,7 +60,11 @@
     <section class="section-values">
       <div class="row">
         <p
-          style="font-family: 'Montserrat', sans-serif; font-size: 350%; color: black;"
+          style="
+            font-family: 'Montserrat', sans-serif;
+            font-size: 350%;
+            color: black;
+          "
         >
           Our <strong>Northstar</strong>
         </p>
@@ -114,7 +131,7 @@
             <li>Copyrighting & Signage</li>
           </ul>
           <p style="font-weight: bold;">Design</p>
-          <ul style="list-style: none;line-height: 200%;">
+          <ul style="list-style: none; line-height: 200%;">
             <li>UI/UX Design</li>
             <li>Graphics Design</li>
             <li>Packaging design</li>
@@ -229,10 +246,7 @@
       <div class="row">
         <div class="col span-1-of-2">
           <div style="margin-bottom: 10%;">
-            <i
-              class="ion-logo-foursquare"
-              style="font-size: 100px; color: #fff; margin: 0;"
-            ></i>
+            <img src="resources/img/phoenix-logo.jpeg" class="logo" />
           </div>
           <div class="footer-nav">
             <a href="index.html"><h3>Home</h3></a>
@@ -247,13 +261,18 @@
           <div class="work-with-us">
             <a href="work.html"> <h2>Work with us</h2></a>
           </div>
-          <div class="address">
-            <h3>Nigeria</h3>
-            <p>jamiu.okanlawon@globalfaaiz.com</p>
-            <p>careers@globalfaaiz.com</p>
-            <p>
-              08108627764
-            </p>
+          <div class="row">
+            <div class="address col span-1-of-2">
+              <h3>Nigeria</h3>
+              <p>steph@globalfaaiz.com</p>
+              <p>
+                09033510293
+              </p>
+            </div>
+            <div class="address col span-1-of-2">
+              <h3>Careers</h3>
+              <p>careers@globalfaaiz.com</p>
+            </div>
           </div>
         </div>
       </div>
@@ -269,10 +288,7 @@
               <a href="#"><i class="ion-logo-facebook"></i></a>
             </li>
             <li>
-              <a href="#"><i class="ion-logo-twitter"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="ion-logo-googleplus"></i></a>
+              <a href="#"><i class="ion-logo-linkedin"></i></a>
             </li>
             <li>
               <a href="#"><i class="ion-logo-instagram"></i></a>

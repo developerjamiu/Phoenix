@@ -32,6 +32,10 @@
   footer .col:last-child {
     width: 55%;
   }
+
+  footer .row .address {
+    width: 100%;
+  }
 }
 
 /* Small tablets to big tablets from 768px to 1023px */
@@ -110,6 +114,10 @@
 
   .section-viva .viva {
     padding-right: 4%;
+  }
+
+  footer .row .address {
+    width: 100%;
   }
 }
 
@@ -254,6 +262,10 @@
   .section-viva .row:last-child .col {
     width: 48%;
   }
+
+  footer .row .address {
+    width: 100%;
+  }
 }
 
 /* Small Phones from 0 to 480px */
@@ -381,5 +393,10 @@
 
   .look {
     padding-bottom: 30px;
+  }
+
+  footer .row .address {
+    width: 100%;
+    text-align: center;
   }
 }
