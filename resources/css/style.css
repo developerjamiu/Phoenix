@@ -179,16 +179,16 @@ input[type="submit"] {
   right: 0;
   background-color: #e65a22; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
+  padding-top: 60px;
   -webkit-transition: 0.5s;
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
 /* The navigation menu links */
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+  padding: 8px 8px 8px 48px;
   text-decoration: none;
-  font-size: 40px;
+  font-size: 32px;
   color: #dedede;
   display: block;
   border: 0;
@@ -257,9 +257,9 @@ header nav .row {
       from(rgba(0, 0, 0, 0.7)),
       to(hsla(0, 0%, 0%, 0.7))
     ),
-    url(img/north.jpg);
+    url(img/phoenix-home.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(img/north.jpg);
+    url(img/phoenix-home.jpg);
   background-size: cover;
   /* background-position: center; */
   height: 100vh;
@@ -437,7 +437,7 @@ header nav .row {
 /* Footer */
 /* -------------------------------------------*/
 footer {
-  background-color: #000;
+  background-color: #333;
   padding: 50px;
   font-size: 80%;
 }
@@ -445,7 +445,7 @@ footer {
 .footer-nav a h3,
 .footer-nav a h3:visited {
   font-weight: bold;
-  color: #000;
+  color: #333;
   -webkit-text-stroke-width: thin;
   -webkit-text-stroke-color: white;
   font-size: 36px;
@@ -462,7 +462,7 @@ footer {
 .work-with-us a h2 {
   text-align: start;
   font-weight: bold;
-  color: #000;
+  color: #333;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
   margin-top: 5%;
@@ -612,7 +612,7 @@ footer p {
 
 .services-text {
   color: #aaa;
-  text-align: justify;
+  text-align: left;
   margin: 30px 0 0 0;
 }
 
@@ -693,7 +693,7 @@ footer p {
 
 .section-brand .services-text {
   color: #555;
-  text-align: justify;
+  /* text-align: justify; */
   margin: 30px 0 0 0;
 }
 
@@ -724,7 +724,7 @@ footer p {
 
 .section-viva .services-text {
   color: #555;
-  text-align: justify;
+  /* text-align: justify; */
   margin: 30px 0 0 0;
 }
 

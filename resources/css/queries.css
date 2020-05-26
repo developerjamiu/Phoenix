@@ -399,4 +399,8 @@
     width: 100%;
     text-align: center;
   }
+
+  .section-offices .row .col {
+    margin-bottom: 20px;
+  }
 }
